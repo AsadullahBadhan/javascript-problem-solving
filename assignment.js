@@ -29,4 +29,13 @@ function feetToMile(feet) {
     }
 }
 
-console.log(feetToMile(5893));
+// console.log(feetToMile(5893));
+
+function woodCalculator(chiar, table, bed) {
+    var totalWood = 0;
+    totalWood = chiar + table * 3 + bed * 5;
+    return totalWood;
+}
+
+var result = woodCalculator(1, 5, 1);
+console.log(result);
