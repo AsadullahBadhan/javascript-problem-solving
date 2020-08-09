@@ -8,7 +8,6 @@ function feetToMile(feet) {
     return mile;
 }
 
-// console.log(feetToMile(5893));
 
 function woodCalculator(chair, table, bed) {
     var totalWood = 0;
@@ -20,8 +19,6 @@ function woodCalculator(chair, table, bed) {
     return totalWood;
 }
 
-// var result = woodCalculator(20, 5, 10);
-// console.log(result);
 
 function brickCalculator(floorNumber) {
     var buildingHeight = 0;
@@ -41,11 +38,6 @@ function brickCalculator(floorNumber) {
     return buildingHeight * 1000;
 }
 
-// var brick = brickCalculator(14);
-// console.log(brick);
-
-var friendList = ['badhan', 'ratan', 'ali', 'manik', 'mitu', 'munna', 'mim', 'milon', 'sayan', 'asadullah']
-
 function tinyFriend(namesList) {
     var smallestName = "";
     var characterCount = [];
@@ -62,5 +54,3 @@ function tinyFriend(namesList) {
     smallestName = namesList[index];
     return smallestName;
 }
-
-console.log(tinyFriend(friendList));
