@@ -24,22 +24,43 @@ function woodCalculator(chair, table, bed) {
 // console.log(result);
 
 function brickCalculator(floorNumber) {
-    var height = 0;
+    var buildingHeight = 0;
     if (floorNumber < 0) {
         return "Floor number can not be a nagetive number"
     }
     else if (floorNumber <= 10) {
-        height = floorNumber * 15;
+        buildingHeight = floorNumber * 15;
     }
     else if (floorNumber <= 20) {
-        height = (floorNumber - 10) * 12 + 150;
+        buildingHeight = (floorNumber - 10) * 12 + 150;
     }
     else {
-        height = (floorNumber - 20) * 10 + 270;
+        buildingHeight = (floorNumber - 20) * 10 + 270;
     }
 
-    return height * 1000;
+    return buildingHeight * 1000;
 }
 
-var brick = brickCalculator(14);
-console.log(brick);
+// var brick = brickCalculator(14);
+// console.log(brick);
+
+var friendList = ['badhan', 'ratan', 'ali', 'manik', 'mitu', 'munna', 'mim', 'milon', 'sayan', 'asadullah']
+
+function tinyFriend(namesList) {
+    var smallestName = "";
+    var characterCount = [];
+    for (var i = 0; i < namesList.length; i++) {
+        var name = namesList[i];
+        if (name.length <= 0) {
+            return "Please enter some valid name, you should not let it empty"
+        } else {
+            characterCount.push(name.length);
+        }
+    }
+    var lowest = Math.min.apply(null, characterCount);
+    var index = characterCount.indexOf(lowest);
+    smallestName = namesList[index];
+    return smallestName;
+}
+
+console.log(tinyFriend(friendList));
